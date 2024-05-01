@@ -3,7 +3,6 @@
     "alias": "离线图标",
     "description": "让 iconify 图标可以离线使用",
     "type": "library",
-    "version": "1.0.0",
     "keywords": [
         "owl-admin",
         "extension",
