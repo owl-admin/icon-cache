@@ -1,0 +1,38 @@
+{
+    "name": "slowlyo/owl-icon-cache",
+    "alias": "离线图标",
+    "description": "让 iconify 图标可以离线使用",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": [
+        "owl-admin",
+        "extension",
+        "icon"
+    ],
+    "homepage": "https://github.com/slowlyo/owl-icon-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slowlyo",
+            "email": "slowlyo_email@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "iconify/json": "*",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slowlyo\\OwlIconCache\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "Slowlyo\\OwlIconCache\\OwlIconCacheServiceProvider",
+        "laravel": {
+            "providers": [
+                "Slowlyo\\OwlIconCache\\OwlIconCacheServiceProvider"
+            ]
+        }
+    }
+}
